@@ -53,37 +53,4 @@ async function start() {
 const router = express.Router();
 const { Inaanak } = models;
 
-// POST create
-router.post('/', async (req, res) => {
-  const body = req.body || {};
-  const { name, pamasko } = body;
-  if (!name || pamasko === undefined) {
-    return res.status(400).json({ error: 'Missing required fields: name and pamasko' });
-  }
-  try {
-    const created = await Inaanak.create({ name, pamasko });
-    return res.status(201).json(created);
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({ error: err.message || 'Server error' });
-  }
-});
-
-// PATCH update
-router.patch('/:id', async (req, res) => {
-  const { id } = req.params;
-  const updates = req.body || {};
-  try {
-    const item = await Inaanak.findByPk(id);
-    if (!item) return res.status(404).json({ error: 'Not found' });
-    await item.update(updates);
-    return res.json(item);
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({ error: err.message || 'Server error' });
-  }
-});
-
-module.exports = router;
-
 start();
