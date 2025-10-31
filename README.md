@@ -42,6 +42,7 @@ API Calls:
 
 [Part 2]
 Task: Enhance and Extend the Inaanak Application
+
 Modify the Inaanak API
 - Add pagination functionality to the API to support efficient data retrieval for large datasets.
 - Ensure the API supports query parameters like page, limit, and optional sorting or filtering as needed.
