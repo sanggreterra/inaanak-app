@@ -34,9 +34,13 @@ INAANAK
 - pamasko (float)
 
 GET - localhost:8000/inaanak
+
 GET - localhost:8000/inaanak/:id
+
 POST - localhost:8000/inaanak
+
 PATCH - GET - localhost:8000/inaanak/:id
+
 DELETE - localhost:8000/inaanak/:id
 
 [Part 2]
