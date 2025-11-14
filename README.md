@@ -28,20 +28,20 @@ Project Reference: https://www.facebook.com/ProgrammerLang/posts/pfbid026K5nkavn
 [Part 1]
 Create a CRUD API Using any framework that you want and connect it in MySQL.
 
-INAANAK
+INAANAK Entities:
 - id (int)
 - name (text)
 - pamasko (float)
 
 API Calls:
-- GET - localhost:8000/inaanak
-- GET - localhost:8000/inaanak/:id
-- POST - localhost:8000/inaanak
-- PATCH - GET - localhost:8000/inaanak/:id
-- DELETE - localhost:8000/inaanak/:id
+- ✅GET - localhost:8000/inaanak
+- ✅GET - localhost:8000/inaanak/:id
+- ✅POST - localhost:8000/inaanak
+- ❌PATCH - GET - localhost:8000/inaanak/:id
+- ✅DELETE - localhost:8000/inaanak/:id
 
 [Part 2]
-Task: Enhance and Extend the Inaanak Application
+Enhance and Extend the Inaanak Application
 
 Modify the Inaanak API
 - Add pagination functionality to the API to support efficient data retrieval for large datasets.
